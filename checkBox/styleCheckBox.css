@@ -1,0 +1,40 @@
+.real-checkbox {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+  }
+  .custom-checkbox {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: sub;
+    margin-left: 5px;
+
+  }
+  .custom-checkbox::before {
+    content:'';
+    font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands';
+    /* рисуем галочку*/
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-image: url('./img/angle-down-solid.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+  
+    /* выравниваем по центру */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.2s ease-in;
+    z-index: 100;
+  } 
+  
+  /* активируем фейковый чекбокс*/
+  .real-checkbox:checked + .custom-checkbox::before {
+    background-image: url('./img/angle-up-solid.svg');
+  }

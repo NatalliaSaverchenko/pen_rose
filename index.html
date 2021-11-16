@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PenRose</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,900;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <script src="./index.js" defer></script>
+    
+</head>
+<body>
+    <header class="header">
+      <div class="container">
+        <div class="header-row">
+          <div class="logo">
+            <div class="image-container">
+              <img src="./img/Triangle.svg" alt="logo"/>
+            </div>
+            <div class="logo-title">
+              <span>penrose</span>
+            </div>
+            
+          </div>
+          <nav>
+            
+            <ul class="navigation">
+                <li class="navigation-main">Home</li>
+                <li class="navigation-main"><a href='#'>New collections</a></li>
+                <li class="navigation-main">
+                  <label for="store-id" class="label-store"> <a href="#">store</a>
+                    <input type="checkbox" id="store-id" class="real-checkbox">
+                    <span class="custom-checkbox"></span>
+                    <ul class="navigation-store-list">
+                      <li class="navigation-store-list-item"><a href="#">Women</a></li>
+                      <li class="navigation-store-list-item"><a href="#">Men</a></li>
+                      <li class="navigation-store-list-item"><a href="#">Kids</a></li>
+                    </ul>
+                  </label>
+                </li>
+                <li class="navigation-main"><a href='#'>Contacts</a></li>
+            </ul>
+          </nav>
+        </div>
+       
+      </div>
+
+    </header>
+    
+    <section>
+      <div class="container">
+        <div class="fashion">
+        
+          <div class="fashion-club">
+            <div class="fashion-club-pretitle"><span>a fashion club</span></div>
+            <h1>pen rose</h1>
+            <h2>coctail</h2>
+            <div class="fashion-club-posttitle"><span>just at a chance to participate in our new fashion adventure</span></div>
+          </div>
+          <div class="fashion-image">
+          </div>
+          <div class="fashion-image-logo">
+          </div>
+          <div class="fashion-swiper swiper mySwiper">
+            <div class="swiper-wrapper">
+                <!-- <div class="swiper-slide">
+                    <i class="fas fa-quote-left"></i>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium ipsa commodi voluptatum maiores, enim dolores voluptatem laboriosam sit recusandae! In, hic.</p>
+                    <span>Lorem, ipsum.</span>
+                </div>
+                <div class="swiper-slide">
+                  <i class="fas fa-quote-left"></i>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium ipsa commodi voluptatum maiores, enim dolores voluptatem laboriosam sit recusandae! In, hic.</p>
+                  <span>Lorem, ipsum.</span>
+                </div>
+                <div class="swiper-slide">
+                  <i class="fas fa-quote-left"></i>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium ipsa commodi voluptatum maiores, enim dolores voluptatem laboriosam sit recusandae! In, hic.</p>
+                  <span>Lorem, ipsum.</span>
+                </div> -->
+                  
+                  
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+            
+          </div>
+        </div>
+        <div class=video-item>
+          <a 
+            
+            href="https://www.youtube.com/watch?v=fRA_bnJJ-P4"
+            target="_blank">
+            <div class="video-item-image">
+              <img src="./img/Triangle.svg" alt="preview">
+            </div>
+        </a>
+        </div>
+      </div>
+      
+      
+    </section>
+    
+  
+      <!-- Swiper JS -->
+      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  
+      <!-- Initialize Swiper -->
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+          spaceBetween: 30,
+          pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
+    
+</body>
+</html>
